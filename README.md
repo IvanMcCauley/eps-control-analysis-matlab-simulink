@@ -26,21 +26,29 @@ This is the kind of work that sits underneath ADAS and vehicle systems developme
 
 ## Selected results
 
-<p align="center">
-  <img src="media/simulink_model.png" width="700">
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="media/simulink_model.png" width="400"><br>
+      <sub><b>Closed-loop Simulink model</b><br>EPS plant + PID controller</sub>
+    </td>
+    <td align="center">
+      <img src="media/step_response2.png" width="400"><br>
+      <sub><b>Step response</b><br>Improved settling time & overshoot</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="media/pole_zero_map.png" width="400"><br>
+      <sub><b>Pole–zero map</b><br>Closed-loop stability verification</sub>
+    </td>
+    <td align="center">
+      <img src="media/bode_plot.png" width="400"><br>
+      <sub><b>Frequency response</b><br>Bandwidth & disturbance rejection</sub>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="media/step_response.png" width="700">
-</p>
-
-<p align="center">
-  <img src="media/pole_zero_map.png" width="700">
-</p>
-
-<p align="center">
-  <img src="media/bode_plot.png" width="700">
-</p>
 
 ## Notes on scope
 This repository is intentionally focused on **modelling + analysis + validation**.
