@@ -4,27 +4,45 @@
 System-level modelling and closed-loop behaviour analysis of an **Electric Power Steering (EPS)** system using **MATLAB/Simulink**.  
 Focus: implement a published EPS plant model, close the loop with PID, and evaluate behaviour against performance targets using stability and robustness checks.
 
-## What I built
-- Implemented an EPS plant model in **MATLAB/Simulink** (transfer-function-based) and integrated a **PID** controller in closed loop.
-- Evaluated time-domain behaviour and extracted key KPIs:
+## 🧠 What I built
+- Implemented a transfer-function-based **EPS plant model** in MATLAB/Simulink and integrated a **PID controller** in closed loop.
+- Evaluated time-domain behaviour against explicit KPIs:
   **overshoot**, **rise time**, **settling time**, **steady-state error**.
-- Performed stability and frequency-domain sanity checks:
-  **pole-zero map**, **Bode**, **Nyquist**.
-- Ran a simple robustness disturbance injection test to observe recovery and settling behaviour.
-- Documented modelling assumptions, limitations, and verification steps for traceability.
+- Verified closed-loop stability and margins using:
+  **pole–zero analysis**, **Bode**, and **Nyquist** plots.
+- Injected a disturbance input to observe **robustness**, recovery, and settling behaviour.
+- Documented modelling assumptions, limitations, and validation steps for traceability.
 
-## Why this matters (systems / automotive relevance)
+---
+
+## 📊 Behaviour evaluated
+- Closed-loop stability and pole placement
+- Transient response versus performance targets
+- Steady-state error elimination
+- Disturbance rejection and recovery behaviour
+
+Detailed derivations, controller design steps, and simulation methodology are documented in the attached report.
+
+---
+
+## 🚗 Why this matters (systems / automotive relevance)
 This is the kind of work that sits underneath ADAS and vehicle systems development:
 - turning a model + requirements into a **closed-loop system**
-- checking **expected vs actual** behaviour using measurable KPIs
-- validating **stability / margins** before trusting results
-- documenting assumptions so integration and reviews are repeatable
+- checking **expected vs actual behaviour** using measurable KPIs
+- validating **stability and margins** before trusting results
+- documenting assumptions so integration and review are repeatable
 
-## Artifacts
-- **Report (PDF):** `docs/EPS_Control_Analysis_Report.pdf`
-- **Key figures:** `media/` (step response, pole-zero map, Bode/Nyquist, Simulink diagram)
+The emphasis is on **system behaviour**, not just producing a response plot.
 
-## Selected results
+---
+
+## 📄Technical report
+-  **Technical report (PDF):**  
+  [`docs/EPS_Control_Analysis_Report.pdf`](docs/EPS_Control_Analysis_Report.pdf)
+  
+--- 
+
+## 🧪 Selected results
 
 <table>
   <tr>
@@ -51,8 +69,11 @@ This is the kind of work that sits underneath ADAS and vehicle systems developme
 
 
 ## Notes on scope
-This repository is intentionally focused on **modelling + analysis + validation**.
+This repository is intentionally focused on **modelling, analysis, and validation**.
 It is not a production EPS controller or a high-fidelity vehicle dynamics model.
 
+---
+
 ## References
-The EPS plant model and baseline control approach are derived from published literature and reproduced in MATLAB/Simulink for analysis and verification (see PDF report for full details).
+The EPS plant model and baseline control approach are derived from published literature and reproduced in MATLAB/Simulink for analysis and verification.  
+See the PDF report for full references and derivations.
